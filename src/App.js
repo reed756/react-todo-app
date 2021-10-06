@@ -3,7 +3,7 @@ import TodoItem from "./TodoItem"
 import todosData from "./todosData"
 import './styles.css'
 
-function App extends React.Component {
+class App extends React.Component {
     constructor() {
         super()
         this.state = {
