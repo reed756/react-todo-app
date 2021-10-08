@@ -15,6 +15,11 @@ function TodoItem(props) {
                 onChange={() => props.handleChange(props.item.id)}
             />
             <p style={props.item.completed ? completedStyle: null}>{props.item.text}</p>
+            <i className="far fa-edit"></i>
+            <i 
+                className="far fa-minus-square"
+                onClick={() => props.handleClick(props.item.id)}
+            ></i>
         </div>
     )
 }
